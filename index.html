@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pizzaria da Ruhama Castro de Araujo</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Bem-vindo à Pizzaria de Ruhama Castro de Araujo!</h1>
+
+        <div class="menu-section">
+            <h2>Menu</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Tamanho</th>
+                        <th>Pizza Salgada (PS)</th>
+                        <th>Pizza Doce (PD)</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>P</td>
+                        <td>R$ 30.00</td>
+                        <td>R$ 34.00</td>
+                    </tr>
+                    <tr>
+                        <td>M</td>
+                        <td>R$ 45.00</td>
+                        <td>R$ 48.00</td>
+                    </tr>
+                    <tr>
+                        <td>G</td>
+                        <td>R$ 60.00</td>
+                        <td>R$ 66.00</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <div class="order-section">
+            <h2>Faça seu Pedido</h2>
+            <div class="input-group">
+                <label for="sabor">Sabor:</label>
+                <select id="sabor">
+                    <option value="PS">Pizza Salgada</option>
+                    <option value="PD">Pizza Doce</option>
+                </select>
+            </div>
+
+            <div class="input-group">
+                <label for="tamanho">Tamanho:</label>
+                <select id="tamanho">
+                    <option value="P">P</option>
+                    <option value="M">M</option>
+                    <option value="G">G</option>
+                </select>
+            </div>
+
+            <button id="add-to-cart">Adicionar ao Pedido</button>
+
+            <h3>Seu Pedido:</h3>
+            <ul id="order-list">
+                </ul>
+
+            <p class="total-display">Total a Pagar: <span id="total-price">R$ 0.00</span></p>
+
+            <button id="finish-order">Finalizar Pedido</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
